@@ -24,6 +24,7 @@
 
 <body>
     <div class="bg-home"> <!--PARA COLOCAR A IMAGEM DE FUNDO-->
+        <!-- CABEÇALHO -->
         <header>
             <nav class="header-content conteiner">
                 <div class="header-icons">
@@ -54,8 +55,9 @@
                 </div>
             </nav>
 
+            <!-- PRINCIPAL -->
             <main class="hero conteiner">
-                <h1>Estilo é um reflexo da sua atiude e sua personalidade.</h1>
+                <h1>Estilo é um reflexo da sua atitude e sua personalidade.</h1>
 
                 <p>Horário de funcionamento: 9h ás 19h</p>
 
@@ -73,13 +75,104 @@
 
             <div class="about-description">
                 <h2>Sobre</h2>
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias in voluptatum adipisci accusamus
                     asperiores harum eius explicabo labore nesciunt ab error placeat eum, itaque numquam quae amet sed
                     soluta voluptates?</p>
+
                 <p>Horário de funcionamento: <strong>9h</strong> ás <strong>19h</strong></p>
             </div>
         </div>
     </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="services-content conteiner">
+            <h2>Serviços</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rem tempore doloremque dolore voluptates
+                magni, doloribus vero ipsa culpa nisi ducimus corporis veniam velit itaque perspiciatis aspernatur
+                impedit nobis sunt.</p>
+        </div>
+
+        <section class="haircuts">
+            <!-- CARD DE SERVIÇOS -->
+            <div class="haircut">
+                <img src="assets/corte1.png" alt="Corte de cabelo">
+                <div class="haircut-info">
+                    <p><strong>Corte de Cabelo</strong></p>
+
+                    <button>R$ 45,00</button>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/corte2.png" alt="Barba completa">
+                <div class="haircut-info">
+                    <p><strong>Barba completa</strong></p>
+
+                    <button>R$ 55,00</button>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/corte3.png" alt="Corte e Barba">
+
+                <div class="haircut-info">
+                    <p><strong>Corte e Barba</strong></p>
+
+                    <button>R$ 80,00</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="services">
+        <h2>Venha conhecer</h2>
+    </div>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.529844608705!2d-48.47805016825486!3d-1.456165979773266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48dd53a707dd1%3A0xbcd18f299ea50dd7!2sAv.%20Conselheiro%20Furtado%2C%20Bel%C3%A9m%20-%20PA%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1723869847098!5m2!1spt-BR!2sus"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <!-- LINK 1 -->
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <!-- LINK 2 -->
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <!-- LINK 3 -->
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+
+        <div>
+            <img src="assets/logo.svg" alt="logo barbearia">
+        </div>
+
+        <p><span id="year">2024</span> | Dev Éverllon - Todos direitos reservados</p>
+    </footer>
+
+    <!-- BUTTON WHATSAPP -->
+    <a href="#" class="btn-wpp">
+        <img src="assets/whatssapp.svg" alt="botao whatsApp">
+        <span class="tootip-text">Agende seu horário</span>
+    </a>
+
+    <script>
+        const date = new Date();
+        const year = date.getFullYear();
+        const copyAno = document.querySelector('#year');
+        copyAno.innerHTML = `Copyright ${year}`;
+    </script>
 </body>
 
 </html>
