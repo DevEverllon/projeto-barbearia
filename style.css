@@ -292,6 +292,9 @@ i {
   gap: 24px;
   color: #fff;
 }
+.footer p {
+  font-size: 13px;
+}
 
 .footer-icons {
   display: flex;

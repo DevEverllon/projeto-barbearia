@@ -19,7 +19,13 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+
+    <!-- BIBLIOTECA AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -27,7 +33,7 @@
         <!-- CABEÇALHO -->
         <header>
             <nav class="header-content conteiner">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
                     <!-- LINK 1 -->
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
@@ -44,11 +50,11 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="assets/logo.svg" alt="logo da barbearia">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/logo.svg" alt="logo da barbearia" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
                 </div>
 
-                <div>
+                <div data-aos="fade-down">
                     <a href="#" class="header-button">
                         Agendar Horário
                     </a>
@@ -56,7 +62,7 @@
             </nav>
 
             <!-- PRINCIPAL -->
-            <main class="hero conteiner">
+            <main class="hero conteiner" data-aos="fade-up" data-aos-delay="400">
                 <h1>Estilo é um reflexo da sua atitude e sua personalidade.</h1>
 
                 <p>Horário de funcionamento: 9h ás 19h</p>
@@ -69,11 +75,11 @@
     <!-- ABOUT -->
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="900">
                 <img src="assets/images.svg" alt="imagem sobre a barbearia">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-out-left" data-aos-duration="250">
                 <h2>Sobre</h2>
 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias in voluptatum adipisci accusamus
@@ -97,7 +103,7 @@
 
         <section class="haircuts">
             <!-- CARD DE SERVIÇOS -->
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="150">
                 <img src="assets/corte1.png" alt="Corte de cabelo">
                 <div class="haircut-info">
                     <p><strong>Corte de Cabelo</strong></p>
@@ -106,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="250">
                 <img src="assets/corte2.png" alt="Barba completa">
                 <div class="haircut-info">
                     <p><strong>Barba completa</strong></p>
@@ -115,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="350">
                 <img src="assets/corte3.png" alt="Corte e Barba">
 
                 <div class="haircut-info">
@@ -162,7 +168,7 @@
     </footer>
 
     <!-- BUTTON WHATSAPP -->
-    <a href="#" class="btn-wpp">
+    <a href="#" class="btn-wpp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
         <img src="assets/whatssapp.svg" alt="botao whatsApp">
         <span class="tootip-text">Agende seu horário</span>
     </a>
@@ -173,6 +179,8 @@
         const copyAno = document.querySelector('#year');
         copyAno.innerHTML = `Copyright ${year}`;
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
